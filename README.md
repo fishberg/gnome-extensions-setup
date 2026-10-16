@@ -67,6 +67,10 @@ gnome-extensions enable named-workspaces@a31.at
 # Disable extensions
 gnome-extensions disable system-monitor-next@paradoxxx.zero.gmail.com
 gnome-extensions disable named-workspaces@a31.at
+
+# Fixed workspace count
+gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 ```
 
 If an extension does not appear immediately, log out and log back in.
